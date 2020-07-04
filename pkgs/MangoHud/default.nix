@@ -34,8 +34,6 @@ stdenv.mkDerivation rec {
   ];
 
   preConfigure = ''
-    ls "${vulkan-headers}/share/vulkan/registry"
-    echo "----------------------- $out -----------------"
     mkdir -p "$out/share/vulkan/"
     ln -sf "${vulkan-headers}/share/vulkan/registry/" $out/share/vulkan/
     ln -sf "${vulkan-headers}/include" $out
