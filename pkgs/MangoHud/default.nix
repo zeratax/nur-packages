@@ -40,7 +40,8 @@ stdenv.mkDerivation rec {
   '';
 
   meta = with lib; {
-    description = "A fancy, customizable, keyboard-operable Qt/QML+Python Matrix chat client for encrypted and decentralized communication.";
-    homepage = "https://github.com/mirukana/mirage";
+    description = "A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.";
+    homepage = "https://github.com/flightlessmango/MangoHud";
+    # maintainers = with maintainers; [ zeratax ];
   };
 }

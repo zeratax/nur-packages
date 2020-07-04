@@ -8,13 +8,24 @@
 
 { pkgs ? import <nixpkgs> {} }:
 
-{
+rec {
   # The `lib`, `modules`, and `overlay` names are special
   lib = import ./lib { inherit pkgs; }; # functions
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+ 
+  # applications
+
+  mangohud-x86 = pkgs.pkgsi686Linux.callPackage ./pkgs/MangoHud { };
   mangohud = pkgs.callPackage ./pkgs/MangoHud { };
 
-}
+  mirage-im = pkgs.libsForQt5.callPackage ./pkgs/mirage { myPython3Packages = python3Packages; };
 
+   # python modules
+
+  python3Packages = pkgs.recurseIntoAttrs (
+    (pkgs.python3Packages.callPackage ./pkgs/development/python-modules {
+    })
+  );
+}
