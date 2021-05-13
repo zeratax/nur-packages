@@ -8,7 +8,7 @@ lib.makeScope pkgs.newScope (self: with self; {
     baron = python3.pkgs.callPackage ./baron { };
     hsluv = python3.pkgs.callPackage ./hsluv { };
     # html-sanitizer = python3.pkgs.callPackage ./html-sanitizer { };
-    matrix-nio = python3.pkgs.callPackage ./matrix-nio { inherit aiohttp-socks; };
+    # matrix-nio = python3.pkgs.callPackage ./matrix-nio { inherit aiohttp-socks; };
     plyer = python3.pkgs.callPackage ./plyer { };
     # pyfastcopy = python3.pkgs.callPackage ./pyfastcopy { };
     python-socks = python3.pkgs.callPackage ./python-socks { };
