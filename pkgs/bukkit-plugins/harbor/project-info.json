@@ -19345,11 +19345,11 @@
         "unresolved-version": "1.13-SNAPSHOT",
         "repository-id": "papermc-repo",
         "metadata": {
-            "url": "https://papermc.io/repo/repository/maven-public//net/md-5/bungeecord-chat/1.13-SNAPSHOT/maven-metadata.xml",
+            "url": "https://papermc.io/repo/repository/maven-public/net/md-5/bungeecord-chat/1.13-SNAPSHOT/maven-metadata.xml",
             "sha1": "0c0cf36832ce37f41a8abfc063e9b4b832add1bc"
         },
         "authenticated": false,
-        "url": "https://papermc.io/repo/repository/maven-public//net/md-5/bungeecord-chat/1.13-SNAPSHOT/bungeecord-chat-1.13-20200123.020938-2.jar",
+        "url": "https://papermc.io/repo/repository/maven-public/net/md-5/bungeecord-chat/1.13-SNAPSHOT/bungeecord-chat-1.13-20200123.020938-2.jar",
         "sha1": "0d0cf49e1752e31eb09eb5d57d5f0835b81e5fe6",
         "relocations": []
     }, {
@@ -19483,11 +19483,11 @@
         "unresolved-version": "1.13-SNAPSHOT",
         "repository-id": "papermc-repo",
         "metadata": {
-            "url": "https://papermc.io/repo/repository/maven-public//net/md-5/bungeecord-parent/1.13-SNAPSHOT/maven-metadata.xml",
+            "url": "https://papermc.io/repo/repository/maven-public/net/md-5/bungeecord-parent/1.13-SNAPSHOT/maven-metadata.xml",
             "sha1": "e290c166fc16e02715799a34c7c8f8da25e3109f"
         },
         "authenticated": false,
-        "url": "https://papermc.io/repo/repository/maven-public//net/md-5/bungeecord-parent/1.13-SNAPSHOT/bungeecord-parent-1.13-20190406.085510-73.pom",
+        "url": "https://papermc.io/repo/repository/maven-public/net/md-5/bungeecord-parent/1.13-SNAPSHOT/bungeecord-parent-1.13-20190406.085510-73.pom",
         "sha1": "e34a6a2417a444f77a1e5c6c17b54d1a41035013",
         "relocations": []
     }, {
@@ -19554,11 +19554,11 @@
         "unresolved-version": "1.13-SNAPSHOT",
         "repository-id": "papermc-repo",
         "metadata": {
-            "url": "https://papermc.io/repo/repository/maven-public//net/md-5/bungeecord-chat/1.13-SNAPSHOT/maven-metadata.xml",
+            "url": "https://papermc.io/repo/repository/maven-public/net/md-5/bungeecord-chat/1.13-SNAPSHOT/maven-metadata.xml",
             "sha1": "0c0cf36832ce37f41a8abfc063e9b4b832add1bc"
         },
         "authenticated": false,
-        "url": "https://papermc.io/repo/repository/maven-public//net/md-5/bungeecord-chat/1.13-SNAPSHOT/bungeecord-chat-1.13-20200123.020938-2.pom",
+        "url": "https://papermc.io/repo/repository/maven-public/net/md-5/bungeecord-chat/1.13-SNAPSHOT/bungeecord-chat-1.13-20200123.020938-2.pom",
         "sha1": "da47907223fb32ea2bb4179797c3a6f1e4450cda",
         "relocations": []
     }, {
@@ -27511,7 +27511,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/EssentialsX/2.17.0/EssentialsX-2.17.0.jar",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/EssentialsX/2.17.0/EssentialsX-2.17.0.jar",
         "sha1": "53f28cee1067159366fbcd530138422c8fc97f4a",
         "relocations": []
     }, {
@@ -27558,7 +27558,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/NMSProvider/2.17.0/NMSProvider-2.17.0.jar",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/NMSProvider/2.17.0/NMSProvider-2.17.0.jar",
         "sha1": "110b6adf21bf8de066c3f211aadbfe927a43c75d",
         "relocations": []
     }, {
@@ -27625,7 +27625,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/LegacyProvider/2.17.0/LegacyProvider-2.17.0.jar",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/LegacyProvider/2.17.0/LegacyProvider-2.17.0.jar",
         "sha1": "7eeec0c0099acdf056e1a8884af71eaa2a90e0e4",
         "relocations": []
     }, {
@@ -27681,7 +27681,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/LegacyProvider/2.17.0/LegacyProvider-2.17.0.pom",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/LegacyProvider/2.17.0/LegacyProvider-2.17.0.pom",
         "sha1": "45fefc1d008c3dc9cea9afebf65cf3ba56c4f6f5",
         "relocations": []
     }, {
@@ -27819,7 +27819,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/EssentialsX/2.17.0/EssentialsX-2.17.0.pom",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/EssentialsX/2.17.0/EssentialsX-2.17.0.pom",
         "sha1": "914f88eada52aa9beeb7712ea5b4e6a8d37cbf0a",
         "relocations": []
     }, {
@@ -27884,7 +27884,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/1_8_R2Provider/2.17.0/1_8_R2Provider-2.17.0.jar",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/1_8_R2Provider/2.17.0/1_8_R2Provider-2.17.0.jar",
         "sha1": "f73778c27e9d0424b2a1eba4202dff9ad3efad01",
         "relocations": []
     }, {
@@ -27940,7 +27940,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/UpdatedMetaProvider/2.17.0/UpdatedMetaProvider-2.17.0.jar",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/UpdatedMetaProvider/2.17.0/UpdatedMetaProvider-2.17.0.jar",
         "sha1": "4ea9f5551043662a72c4fd89fbce9128bdf26081",
         "relocations": []
     }, {
@@ -27996,7 +27996,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/ReflectionProvider/2.17.0/ReflectionProvider-2.17.0.jar",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/ReflectionProvider/2.17.0/ReflectionProvider-2.17.0.jar",
         "sha1": "536c7f6810d92436fe78d5e6a72c76f9b00b250b",
         "relocations": []
     }, {
@@ -28034,7 +28034,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/EssentialsXParent/2.17.0/EssentialsXParent-2.17.0.pom",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/EssentialsXParent/2.17.0/EssentialsXParent-2.17.0.pom",
         "sha1": "4f4d5724eade348b439944d6e859f33c03319266",
         "relocations": []
     }, {
@@ -28090,7 +28090,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/FlattenedProvider/2.17.0/FlattenedProvider-2.17.0.jar",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/FlattenedProvider/2.17.0/FlattenedProvider-2.17.0.jar",
         "sha1": "a5b3da683156f65a919fcc8ffb66cfa8c29ae464",
         "relocations": []
     }, {
@@ -28146,7 +28146,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/FlattenedProvider/2.17.0/FlattenedProvider-2.17.0.pom",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/FlattenedProvider/2.17.0/FlattenedProvider-2.17.0.pom",
         "sha1": "a69c0adb76f7fe05f6588fddcfe2878d51a4f232",
         "relocations": []
     }, {
@@ -28202,7 +28202,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/ReflectionProvider/2.17.0/ReflectionProvider-2.17.0.pom",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/ReflectionProvider/2.17.0/ReflectionProvider-2.17.0.pom",
         "sha1": "d6dd9ce7d84ce0224481973570a2599ad32288bf",
         "relocations": []
     }, {
@@ -28260,7 +28260,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/NMSProvider/2.17.0/NMSProvider-2.17.0.pom",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/NMSProvider/2.17.0/NMSProvider-2.17.0.pom",
         "sha1": "16307a441aaf0c9f8622053f37a6d2dab956a935",
         "relocations": []
     }, {
@@ -28325,7 +28325,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/1_8_R2Provider/2.17.0/1_8_R2Provider-2.17.0.pom",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/1_8_R2Provider/2.17.0/1_8_R2Provider-2.17.0.pom",
         "sha1": "4224f68824cb6b61b614ef8ac7f83e35076e0b6d",
         "relocations": []
     }, {
@@ -28807,7 +28807,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/1_8_R1Provider/2.17.0/1_8_R1Provider-2.17.0.jar",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/1_8_R1Provider/2.17.0/1_8_R1Provider-2.17.0.jar",
         "sha1": "7b0cc332d8dcae7744914144adc33d0a9fa84152",
         "relocations": []
     }, {
@@ -28872,7 +28872,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/1_8_R1Provider/2.17.0/1_8_R1Provider-2.17.0.pom",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/1_8_R1Provider/2.17.0/1_8_R1Provider-2.17.0.pom",
         "sha1": "69eb880c16e8fa5af5858640ff13e3858e91bbd1",
         "relocations": []
     }, {
@@ -28928,7 +28928,7 @@
             "exclusions": []
         }],
         "authenticated": false,
-        "url": "https://ci.ender.zone/plugin/repository/everything//net/ess3/UpdatedMetaProvider/2.17.0/UpdatedMetaProvider-2.17.0.pom",
+        "url": "https://ci.ender.zone/plugin/repository/everything/net/ess3/UpdatedMetaProvider/2.17.0/UpdatedMetaProvider-2.17.0.pom",
         "sha1": "e945c35cf10235ab549eb6f433d07d29475709ec",
         "relocations": []
     }, {
