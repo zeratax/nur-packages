@@ -23,7 +23,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "Full Syntax Tree for python to make writing refactoring code a realist task";
+    description = "Full Syntax Tree for python to make writing refactoring code a realist task.";
     homepage = "https://github.com/PyCQA/baron";
     license = licenses.lgpl3Plus;
   };

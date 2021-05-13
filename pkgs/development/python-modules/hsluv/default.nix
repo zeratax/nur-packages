@@ -14,7 +14,7 @@ buildPythonPackage rec {
   };
 
   meta = with lib; {
-    description = "A Python implementation of HSLuv";
+    description = "A Python implementation of HSLuv.";
     homepage = "https://www.hsluv.org/";
     license = licenses.mit;
   };

@@ -7,8 +7,9 @@
 let
   pypkgs = with python3Packages; [
     aiofiles filetype matrix-nio appdirs cairosvg
-    pymediainfo setuptools html-sanitizer mistune blist
-    pyotherside hsluv redbaron
+    pymediainfo setuptools html-sanitizer mistune
+    pyotherside plyer sortedcontainers watchgod
+    redbaron hsluv simpleaudio dbus-python
   ];
 in
 mkDerivation rec {
@@ -48,7 +49,7 @@ mkDerivation rec {
     '';
 
 
-  meta = with stdenv.lib; {
+  meta = with lib; {
     homepage = "https://github.com/mirukana/mirage/";
     description =
       " A fancy, customizable, keyboard-operable Qt/QML+Python Matrix chat client for encrypted and decentralized communication.";

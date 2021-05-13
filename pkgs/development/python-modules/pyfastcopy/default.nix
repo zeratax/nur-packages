@@ -27,7 +27,7 @@ buildPythonPackage rec {
 
   meta = {
     homepage = "https://github.com/desbma/pyfastcopy";
-    description = "Speed up Python's shutil.copyfile by using sendfile system call";
+    description = "Speed up Python's shutil.copyfile by using sendfile system call.";
     license = lib.licenses.psfl;
     # maintainers = with lib.maintainers; [ zeratax ];
   };
