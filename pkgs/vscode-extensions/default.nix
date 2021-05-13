@@ -3,7 +3,7 @@ let
   inherit (vscode-utils) buildVscodeMarketplaceExtension;
 in
 
-rec {
+{
   b4dm4n.nixpkgs-fmt  = callPackage ./nixpkgs-fmt {};
 
   hookyqr.beautify = buildVscodeMarketplaceExtension {

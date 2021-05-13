@@ -1,9 +1,15 @@
-{ callPackage }:
+{ config, lib, pkgs }:
 
-rec {
-  html-sanitizer = callPackage ./html-sanitizer { };
+lib.makeScope pkgs.xfce.newScope (self: with self; {
+    # html-sanitizer = callPackage ./html-sanitizer { };
 
-  matrix-nio = callPackage ./matrix-nio { };
+    # matrix-nio = callPackage ./matrix-nio { };
 
-  pyfastcopy = callPackage ./pyfastcopy { };
-}
+    # pyfastcopy = callPackage ./pyfastcopy { };
+    hsluv = callPackage ./hsluv { };
+
+    baron = callPackage ./baron { };
+
+    redbaron = self.callPackage ./redbaron { };
+})
+ 
