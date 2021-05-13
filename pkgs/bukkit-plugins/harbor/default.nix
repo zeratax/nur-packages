@@ -34,7 +34,6 @@ in stdenv.mkDerivation rec {
     description =
       "Harbor is a plugin that redefines sleep within your Spigot server!";
     license = licenses.mit;
-    # broken = true; # works but won't build in CI since it needs to download mvn2nix
     # maintainers = with maintainers; [ zeratax ];
   };
 }

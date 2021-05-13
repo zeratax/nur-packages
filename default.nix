@@ -18,13 +18,13 @@ rec {
   matrix-registration = pkgs.callPackage ./pkgs/matrix-registration { };
 
   mirage-im =
-    pkgs.libsForQt5.callPackage ./pkgs/mirage { inherit python3Packages; };
+    pkgs.libsForQt5.callPackage ./pkgs/mirage { python3Packages = myPython3Packages // pkgs.python3Packages; };
 
   # games
   srb2 = pkgs.callPackage ./pkgs/srb2 { };
 
   # python modules
-  python3Packages = pkgs.python3Packages // pkgs.recurseIntoAttrs
+  myPython3Packages = pkgs.recurseIntoAttrs
     (pkgs.callPackage ./pkgs/development/python-modules { });
 
   # bukkit/spigot/paper minecraft server plugins
