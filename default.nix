@@ -16,8 +16,6 @@ rec {
 
  
   # applications
-  mangohud = pkgs.callPackage ./pkgs/MangoHud/combined.nix { libXNVCtrl = pkgs.linuxPackages.nvidia_x11.settings.libXNVCtrl; };
-
   matrix-registration = pkgs.callPackage ./pkgs/matrix-registration { };
 
   mirage-im = pkgs.libsForQt5.callPackage ./pkgs/mirage { inherit python3Packages; };
