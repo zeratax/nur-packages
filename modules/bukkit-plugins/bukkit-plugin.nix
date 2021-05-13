@@ -1,10 +1,8 @@
 { systemConfig, lib, pkgs, ... }:
 with lib;
 types.submodule ({ config, ... }:
-  let
-    settingsFormat = pkgs.formats.yaml { };
-  in
-  {
+  let settingsFormat = pkgs.formats.yaml { };
+  in {
     options = rec {
       package = mkOption {
         type = types.nullOr types.package;
@@ -19,7 +17,7 @@ types.submodule ({ config, ... }:
         default = null;
         example = literalExample ''
           {
-            "config.yaml" = {
+            "Harbor/config.yml" = {
               blacklist = [
                 "world_nether"
                 "world_the_end"

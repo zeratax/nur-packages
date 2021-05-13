@@ -1,10 +1,11 @@
 { stdenv, maven, callPackage, fetchFromGitHub }:
-let
-  mvn2nix = import
-    (fetchTarball "https://github.com/fzakaria/mvn2nix/archive/master.tar.gz")
-    { };
-  mavenRepository =
-   mvn2nix.buildMavenRepositoryFromLockFile { file = ./mvn2nix-lock.json; };
+let repository = callPackage ./build-maven-repository.nix { };
+# let
+#   mvn2nix = import
+#     (fetchTarball "https://github.com/fzakaria/mvn2nix/archive/master.tar.gz")
+#     { };
+#   repository =
+#    mvn2nix.buildMavenRepositoryFromLockFile { file = ./mvn2nix-lock.json; };
 in stdenv.mkDerivation rec {
   pname = "harbor";
   version = "1.6.3";
@@ -19,8 +20,8 @@ in stdenv.mkDerivation rec {
   buildInputs = [ maven ];
 
   buildPhase = ''
-    echo "Using repository ${mavenRepository}"
-    mvn --offline -Dmaven.repo.local=${mavenRepository} package;
+    echo "Using repository ${repository}"
+    mvn --offline -Dmaven.repo.local=${repository} package;
   '';
 
   installPhase = ''
@@ -33,6 +34,7 @@ in stdenv.mkDerivation rec {
     description =
       "Harbor is a plugin that redefines sleep within your Spigot server!";
     license = licenses.mit;
+    # broken = true; # works but won't build in CI since it needs to download mvn2nix
     # maintainers = with maintainers; [ zeratax ];
   };
 }
