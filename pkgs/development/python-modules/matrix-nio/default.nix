@@ -85,6 +85,5 @@ buildPythonPackage rec {
     description = "A Python Matrix client library, designed according to sans I/O principles";
     homepage = "https://github.com/poljar/matrix-nio";
     license = licenses.isc;
-    maintainers = with maintainers; [ tilpner emily symphorien ];
   };
 }

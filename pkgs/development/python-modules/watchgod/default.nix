@@ -15,6 +15,5 @@ buildPythonPackage rec {
     description = "Simple, modern file watching and code reload in python.";
     homepage = "https://github.com/samuelcolvin/watchgod";
     license = licenses.mit;
-    maintainers = with maintainers; [ vojta001 ];
   };
 }

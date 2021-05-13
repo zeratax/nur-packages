@@ -15,6 +15,5 @@ buildPythonPackage rec {
     description = "The python-socks package provides a core proxy client functionality for Python";
     homepage = "https://github.com/romis2012/python-socks";
     license = licenses.asl20;
-    maintainers = with maintainers; [ vojta001 ];
   };
 }
