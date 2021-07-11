@@ -12,14 +12,14 @@ let
 in
 buildPythonPackage rec {
   pname = "matrix-registration";
-  version = "1.0.0.dev4";
+  version = "1.0.0.dev6";
   disabled = pythonOlder "3.7";
 
   src = fetchFromGitHub {
     owner = "ZerataX";
     repo = pname;
     rev = "v${version}";
-    sha256 = "00ky8gqs7860yy1mx7rfcdrmph4s9cqqg887sxxn5vjf3a6nhwnx";
+    sha256 = "0c6lm4nkvii054wsj6wszddgcrgb3g65h3is30pdikdjk8p8j70i";
   };
 
   postPatch = ''
