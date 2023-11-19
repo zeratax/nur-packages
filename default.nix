@@ -17,10 +17,6 @@ rec {
   # applications
   matrix-registration = pkgs.callPackage ./pkgs/matrix-registration { };
 
-  mirage-im = pkgs.libsForQt5.callPackage ./pkgs/mirage {
-    python3Packages = myPython3Packages // pkgs.python3Packages;
-  };
-
   dmnd-bot = pkgs.callPackage ./pkgs/dmnd-bot { };
 
   # games
