@@ -19,9 +19,6 @@ rec {
 
   dmnd-bot = pkgs.callPackage ./pkgs/dmnd-bot { };
 
-  # games
-  srb2 = pkgs.callPackage ./pkgs/srb2 { };
-
   # python modules
   myPython3Packages = pkgs.recurseIntoAttrs
     (pkgs.callPackage ./pkgs/development/python-modules { });
