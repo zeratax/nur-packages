@@ -1,4 +1,4 @@
-{ pkgs, fetchFromGitHub }:
+{ pkgs, lib, fetchFromGitHub }:
 
 pkgs.crystal.buildCrystalPackage rec {
   pname = "dmnd-bot";
@@ -30,4 +30,12 @@ pkgs.crystal.buildCrystalPackage rec {
     popd                          
     echo "done!"                  
   '';
+
+  meta = with lib; {
+    broken = true;
+    homepage = "https://github.com/ZerataX/dmnd-bot/";
+    description = "dmnd's official discord bot";
+    license = licenses.mit;
+    maintainers = with maintainers; [ zeratax ];
+  };
 }
