@@ -1,30 +1,8 @@
-{ lib
-, buildPythonPackage
-, fetchFromGitHub
-, git
-, attrs
-, future
-, aiohttp
-, aiohttp-socks
-, aiofiles
-, h11
-, h2
-, Logbook
-, jsonschema
-, unpaddedbase64
-, pycryptodome
-, python-olm
-, peewee
-, cachetools
-, atomicwrites
-, poetry-core
-, pytestCheckHook
-, faker
-, aioresponses
-, hypothesis
-, pytest-aiohttp
-, pytest-benchmark
-}:
+{ lib, buildPythonPackage, fetchFromGitHub, git, attrs, future, aiohttp
+, aiohttp-socks, aiofiles, h11, h2, Logbook, jsonschema, unpaddedbase64
+, pycryptodome, python-olm, peewee, cachetools, atomicwrites, poetry-core
+, pytestCheckHook, faker, aioresponses, hypothesis, pytest-aiohttp
+, pytest-benchmark }:
 
 buildPythonPackage rec {
   pname = "matrix-nio";
@@ -39,11 +17,7 @@ buildPythonPackage rec {
 
   format = "pyproject";
 
-  nativeBuildInputs = [
-    git
-    poetry-core
-    pytestCheckHook
-  ];
+  nativeBuildInputs = [ git poetry-core pytestCheckHook ];
 
   patches = [ ./update-dependencies.patch ];
 
@@ -65,13 +39,8 @@ buildPythonPackage rec {
     atomicwrites
   ];
 
-  checkInputs = [
-    faker
-    aioresponses
-    hypothesis
-    pytest-aiohttp
-    pytest-benchmark
-  ];
+  checkInputs =
+    [ faker aioresponses hypothesis pytest-aiohttp pytest-benchmark ];
 
   disabledTests = [
     # touches network
@@ -82,7 +51,8 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "A Python Matrix client library, designed according to sans I/O principles";
+    description =
+      "A Python Matrix client library, designed according to sans I/O principles";
     homepage = "https://github.com/poljar/matrix-nio";
     license = licenses.isc;
   };

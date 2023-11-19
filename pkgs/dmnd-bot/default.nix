@@ -14,25 +14,20 @@ pkgs.crystal.buildCrystalPackage rec {
 
   shardsFile = ./shards.nix;
 
-  buildInputs = [
-    pkgs.openssl
-  ];
+  buildInputs = [ pkgs.openssl ];
 
-  checkInputs = [
-    pkgs.openssl
-    pkgs.syncplay
-  ];
+  checkInputs = [ pkgs.openssl pkgs.syncplay ];
 
   postPatch = ''
     substituteInPlace spec/syncplay_bot_spec.cr \
         --replace 'syncplay' '${pkgs.syncplay}/bin/syncplay'
   '';
-  
-  preCheck = ''                   
+
+  preCheck = ''
     echo "creating test certs..." 
     pushd spec/test_certs/        
     bash create_certs.sh          
     popd                          
     echo "done!"                  
-  '';                             
+  '';
 }

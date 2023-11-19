@@ -1,18 +1,28 @@
-{ lib, stdenv, mkDerivation, fetchFromGitHub
-, qmake, pkg-config, olm, wrapQtAppsHook
-, qtbase, qtquickcontrols2, qtkeychain, qtmultimedia, qtgraphicaleffects
-, python3Packages, pyotherside, libXScrnSaver
-}:
+{ lib, stdenv, mkDerivation, fetchFromGitHub, qmake, pkg-config, olm
+, wrapQtAppsHook, qtbase, qtquickcontrols2, qtkeychain, qtmultimedia
+, qtgraphicaleffects, python3Packages, pyotherside, libXScrnSaver }:
 
 let
   pypkgs = with python3Packages; [
-    aiofiles filetype matrix-nio appdirs cairosvg
-    pymediainfo setuptools html-sanitizer mistune
-    pyotherside plyer sortedcontainers watchgod
-    redbaron hsluv simpleaudio dbus-python
+    aiofiles
+    filetype
+    matrix-nio
+    appdirs
+    cairosvg
+    pymediainfo
+    setuptools
+    html-sanitizer
+    mistune
+    pyotherside
+    plyer
+    sortedcontainers
+    watchgod
+    redbaron
+    hsluv
+    simpleaudio
+    dbus-python
   ];
-in
-mkDerivation rec {
+in mkDerivation rec {
   version = "0.7.1";
   pname = "mirage";
 
@@ -24,13 +34,17 @@ mkDerivation rec {
     sha256 = "0j7gdg2z8yg3qvwg9d9fa3i4ig231qda48p00s5gk8bc3c65vsll";
   };
 
-  nativeBuildInputs = [ pkg-config qmake wrapQtAppsHook python3Packages.wrapPython ];
+  nativeBuildInputs =
+    [ pkg-config qmake wrapQtAppsHook python3Packages.wrapPython ];
 
   buildInputs = [
-    qtbase qtmultimedia
+    qtbase
+    qtmultimedia
     qtquickcontrols2
-    qtkeychain qtgraphicaleffects
-    olm pyotherside
+    qtkeychain
+    qtgraphicaleffects
+    olm
+    pyotherside
     libXScrnSaver
   ];
 
@@ -46,8 +60,7 @@ mkDerivation rec {
     wrapProgram $out/bin/mirage \
       --prefix PYTHONPATH : "$PYTHONPATH" \
       "''${qtWrapperArgs[@]}"
-    '';
-
+  '';
 
   meta = with lib; {
     homepage = "https://github.com/mirukana/mirage/";

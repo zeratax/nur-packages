@@ -9,7 +9,7 @@ in stdenv.mkDerivation rec {
     repo = pname;
     rev = version;
     sha256 = "xUu5f9FfLRkZIQslNVZuQH89eQhuzrBxmO2+GkMW538=";
-    };
+  };
 
   buildInputs = [ maven ];
 

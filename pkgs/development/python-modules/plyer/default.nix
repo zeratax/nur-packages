@@ -1,8 +1,4 @@
-{ lib
-, buildPythonPackage
-, python3Packages
-, fetchPypi
-}:
+{ lib, buildPythonPackage, python3Packages, fetchPypi }:
 
 buildPythonPackage rec {
   pname = "plyer";
@@ -14,9 +10,7 @@ buildPythonPackage rec {
     sha256 = "8de38b17bc438df36eedeacd546cf05303ab871855af0669fc4e8df51f2adf94";
   };
 
-  propagatedBuildInputs = with python3Packages; [
-    keyring
-  ];
+  propagatedBuildInputs = with python3Packages; [ keyring ];
 
   doCheck = false;
 

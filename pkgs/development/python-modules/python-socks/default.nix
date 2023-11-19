@@ -12,7 +12,8 @@ buildPythonPackage rec {
   checkInputs = [ trio curio async-timeout ];
 
   meta = with lib; {
-    description = "The python-socks package provides a core proxy client functionality for Python";
+    description =
+      "The python-socks package provides a core proxy client functionality for Python";
     homepage = "https://github.com/romis2012/python-socks";
     license = licenses.asl20;
   };

@@ -1,4 +1,5 @@
-{ lib, buildPythonPackage, fetchFromGitHub, lxml, beautifulsoup4, pytest, pytestrunner }:
+{ lib, buildPythonPackage, fetchFromGitHub, lxml, beautifulsoup4, pytest
+, pytestrunner }:
 
 buildPythonPackage rec {
   pname = "html-sanitizer";
@@ -14,7 +15,8 @@ buildPythonPackage rec {
   propagatedBuildInputs = [ lxml beautifulsoup4 ];
 
   meta = with lib; {
-    description = "An  allowlist-based and very opinionated HTML sanitizer that can be used both for untrusted and trusted sources.";
+    description =
+      "An  allowlist-based and very opinionated HTML sanitizer that can be used both for untrusted and trusted sources.";
     homepage = "https://github.com/matthiask/html-sanitizer";
     license = licenses.bsd3;
     broken = true; # https://hydra.nixos.org/build/143753667

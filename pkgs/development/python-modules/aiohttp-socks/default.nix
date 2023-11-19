@@ -1,4 +1,5 @@
-{ lib, fetchPypi, buildPythonPackage, pythonOlder, aiohttp, attrs, python-socks }:
+{ lib, fetchPypi, buildPythonPackage, pythonOlder, aiohttp, attrs, python-socks
+}:
 
 buildPythonPackage rec {
   pname = "aiohttp-socks";
