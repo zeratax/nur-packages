@@ -1,4 +1,4 @@
-{ stdenv, lib, jq, nixpkgs-fmt, vscode-utils }:
+{ lib, jq, nixpkgs-fmt, vscode-utils }:
 
 let inherit (vscode-utils) buildVscodeMarketplaceExtension;
 in buildVscodeMarketplaceExtension {

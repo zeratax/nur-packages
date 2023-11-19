@@ -1,4 +1,4 @@
-{ stdenv, lib, maven, buildMaven, callPackage, fetchFromGitHub }:
+{ stdenv, lib, maven, buildMaven, fetchFromGitHub }:
 let repository = (buildMaven ./project-info.json).repo;
 in stdenv.mkDerivation rec {
   pname = "harbor";
