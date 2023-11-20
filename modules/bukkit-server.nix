@@ -31,9 +31,11 @@ let
     nameValuePair "${cfg.dataDir}/${n}" (settingsFormat.generate "${n}" v))
     cfg.additionalSettingsFiles;
   settingsCommands = mapAttrsToList (n: v: ''
+    mkdir -p "$(dirname "${n}")"
     cp -f ${v} ${n}
   '') settingsFiles;
   settingsCommandsBackup = mapAttrsToList (n: v: ''
+    mkdir -p "$(dirname "${n}")"
     ln -sb --suffix=.stateful ${v} ${n}
   '') settingsFiles;
   settingsCommandsPermissions = mapAttrsToList (n: v: ''
@@ -210,7 +212,7 @@ in {
     users.groups.minecraft = { };
 
     systemd.services.bukkit-server = {
-      description = "Minecraft Server Service";
+      description = "Bukkit Server Service";
       wantedBy = [ "multi-user.target" ];
       after = [ "network.target" ];
 
