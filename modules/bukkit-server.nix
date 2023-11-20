@@ -162,6 +162,14 @@ in {
         '';
       };
 
+      server-icon = mkOption {
+        type = with types; nullOr path;
+        default = null;
+        description = ''
+          Path to a server icon.
+        '';
+      };
+
       additionalSettingsFiles = mkOption {
         type = types.attrsOf settingsFormat.type;
         default = { };
@@ -225,7 +233,10 @@ in {
 
       preStart = ''
         ln -sf ${eulaFile} eula.txt
-      '' + (if cfg.declarative then ''
+      '' + (if cfg.server-icon != null then ''
+        ln -sf ${cfg.server-icon} server-icon.png
+      '' else ''
+      '') + (if cfg.declarative then ''
 
         if [ -e .declarative ]; then
 
