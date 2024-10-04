@@ -13,6 +13,7 @@ lib.makeScope pkgs.newScope (self:
       harbor = callPackage ./harbor {};
       paper-tweaks = callPackage ./paper-tweaks {};
       protocol-lib = callPackage ./protocol-lib {};
+      vivecraft = callPackage ./vivecraft {};
       voicechat-interactions-paper = callPackage ./voicechat-interaction-paper {};
       simple-voice-chat = callPackage ./simple-voice-chat {};
     })
