@@ -12,5 +12,6 @@ lib.makeScope pkgs.newScope (self:
       dynmap = callPackage ./dynmap {};
       harbor = callPackage ./harbor {};
       paper-tweaks = callPackage ./paper-tweaks {};
+      protocol-lib = callPackage ./protocol-lib {};
       simple-voice-chat = callPackage ./simple-voice-chat {};
     })
