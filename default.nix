@@ -15,8 +15,6 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   # applications
-  matrix-registration = pkgs.callPackage ./pkgs/matrix-registration { };
-
   dmnd-bot = pkgs.callPackage ./pkgs/dmnd-bot { };
 
   # python modules
